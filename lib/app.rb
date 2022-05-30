@@ -6,8 +6,6 @@ get '/' do
 end
 
 get '/cat' do
-  "<div>
-    <img src='https://i.imgur.com/jFaSxym.png'>
-  </div>
-  "
+  @cat_names = ["Amigo", "Misty", "Almond"].sample()
+  erb(:index)
 end
